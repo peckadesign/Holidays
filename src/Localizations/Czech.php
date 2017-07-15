@@ -21,7 +21,6 @@ class Czech implements Pd\Holidays\ILocalization
 	public function __construct(
 		Pd\Holidays\HolidayFactory $holidayFactory
 	) {
-
 		$this->holidayFactory = $holidayFactory;
 	}
 
