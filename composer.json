@@ -1,0 +1,34 @@
+{
+    "name": "pd/holidays",
+    "type": "library",
+    "description": "Přehled svátků pro různé lokalizace",
+    "authors": [
+        {
+            "name": "Milan Pála",
+            "email": "milan.pala@peckadesign.cz"
+        }
+    ],
+    "require": {
+        "php": "^7.1.0",
+        "ext-mbstring": "*",
+        "nette/utils": "2.3.*|2.4.*",
+        "nette/di": "2.3.*|2.4.*",
+        "nette/neon": "2.*"
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "nette/tester": "1.7.*",
+        "pd/coding-standard": "1.7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pd\\Holidays\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PdTests\\Holidays\\": "tests"
+        }
+    }
+
+}
