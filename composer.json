@@ -15,7 +15,6 @@
         "nette/di": "2.3.*|2.4.*",
         "nette/neon": "2.*"
     },
-    "minimum-stability": "stable",
     "require-dev": {
         "nette/tester": "1.7.*",
         "pd/coding-standard": "1.7.*"
