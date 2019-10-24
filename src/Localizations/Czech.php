@@ -37,7 +37,7 @@ class Czech implements Pd\Holidays\ILocalization
 		$holidays[] = $this->holidayFactory->create(7, 5, '_label_holiday_05_07');
 		$holidays[] = $this->holidayFactory->create(7, 6, '_label_holiday_06_07');
 		$holidays[] = $this->holidayFactory->create(9, 28, '_label_holiday_28_29');
-		$holidays[] = $this->holidayFactory->create(9, 28, '_label_holiday_28_10');
+		$holidays[] = $this->holidayFactory->create(10, 28, '_label_holiday_28_10');
 		$holidays[] = $this->holidayFactory->create(11, 17, '_label_holiday_17_11');
 		$holidays[] = $this->holidayFactory->create(12, 24, '_label_holiday_24_12');
 		$holidays[] = $this->holidayFactory->create(12, 25, '_label_holiday_25_12');
