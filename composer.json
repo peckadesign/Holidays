@@ -11,7 +11,7 @@
     "require": {
         "php": "^7.1.0",
         "ext-mbstring": "*",
-        "nette/utils": "2.3.*|2.4.*",
+        "nette/utils": "2.5.*",
         "nette/di": "2.3.*|2.4.*",
         "nette/neon": "2.*"
     },
