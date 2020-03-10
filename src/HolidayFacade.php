@@ -22,10 +22,6 @@ class HolidayFacade implements IHolidayFacade
 
 		$year = $localization->getHolidays((int) $dateTime->format('Y'));
 
-		if ( ! $year) {
-			return NULL;
-		}
-
 		return $year->getHoliday($dateTime);
 	}
 

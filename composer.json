@@ -11,13 +11,14 @@
     "require": {
         "php": "^7.1.0",
         "ext-mbstring": "*",
-        "nette/utils": "2.5.*",
-        "nette/di": "2.3.*|2.4.*",
-        "nette/neon": "2.*"
+        "nette/utils": "~2.5.4",
+        "nette/di": "~2.4.14",
+        "nette/neon": "~2.4.3"
     },
     "require-dev": {
-        "nette/tester": "1.7.*",
-        "pd/coding-standard": "1.7.*"
+        "nette/tester": "2.3.*",
+        "pd/coding-standard": "1.7.*",
+        "phpstan/phpstan": "0.12.11"
     },
     "autoload": {
         "psr-4": {
