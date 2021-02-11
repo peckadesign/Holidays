@@ -9,7 +9,7 @@ use Nette;
 class Czech implements Pd\Holidays\ILocalization
 {
 
-	/** @var array */
+	/** @var array<int, \Pd\Holidays\Year> */
 	private $years;
 
 	/**
@@ -57,7 +57,7 @@ class Czech implements Pd\Holidays\ILocalization
 	}
 
 
-	private function createHoliday(\DateTimeInterface $dateTime, string $name)
+	private function createHoliday(\DateTimeInterface $dateTime, string $name): \Pd\Holidays\Holiday
 	{
 		return $this->holidayFactory->create((int) $dateTime->format('n'), (int) $dateTime->format('j'), $name);
 	}

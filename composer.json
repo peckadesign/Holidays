@@ -18,7 +18,7 @@
     "require-dev": {
         "nette/tester": "2.3.*",
         "pd/coding-standard": "1.7.*",
-        "phpstan/phpstan": "0.12.11"
+        "phpstan/phpstan": "0.12.76"
     },
     "autoload": {
         "psr-4": {

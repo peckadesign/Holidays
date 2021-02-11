@@ -25,12 +25,12 @@ final class Extension extends Nette\DI\CompilerExtension
 	}
 
 
-	private function addLocalization(Nette\DI\ServiceDefinition $holidayFacade, string $localizationClass, string $countryCode)
+	private function addLocalization(Nette\DI\ServiceDefinition $holidayFacade, string $localizationClass, string $countryCode): void
 	{
 		$builder = $this->getContainerBuilder();
 		$countryCodePrefix = Nette\Utils\Strings::lower($countryCode);
 
-		$translations = Nette\Neon\Neon::decode(file_get_contents(__DIR__ . '/../Localizations/' . Nette\Utils\Strings::lower(Nette\Utils\Strings::substring($localizationClass, strrpos($localizationClass, '\\') + 1)) . '.neon'));
+		$translations = Nette\Neon\Neon::decode((string) \file_get_contents(__DIR__ . '/../Localizations/' . Nette\Utils\Strings::lower(Nette\Utils\Strings::substring($localizationClass, strrpos($localizationClass, '\\') + 1)) . '.neon'));
 
 		$czechHolidayFactory = $builder
 			->addDefinition($this->prefix($countryCodePrefix . 'HolidayFactory'))
