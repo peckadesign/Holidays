@@ -5,13 +5,16 @@ namespace Pd\Holidays;
 class Year implements IYear
 {
 
-	/** @var array */
+	/** @var array<int, array<int, IHoliday>> */
 	private $holidaysStructured = [];
 
 	/** @var array|IHoliday[] */
 	private $holidays = [];
 
 
+	/**
+	 * @param IHoliday[] $holidays
+	 */
 	public function __construct(
 		array $holidays
 	) {
@@ -25,7 +28,7 @@ class Year implements IYear
 
 	public function getHoliday(\DateTimeInterface $dateTime): ?IHoliday
 	{
-		return $this->holidaysStructured[$dateTime->format('n')][$dateTime->format('j')] ?? NULL;
+		return $this->holidaysStructured[(int) $dateTime->format('n')][(int) $dateTime->format('j')] ?? NULL;
 	}
 
 

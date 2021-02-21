@@ -6,11 +6,14 @@ class HolidayFactory
 {
 
 	/**
-	 * @var array ['_lang' => 'value']
+	 * @var array<string, string> ['_lang' => 'value']
 	 */
 	private $translates;
 
 
+	/**
+	 * @param array<string, string> $translates
+	 */
 	public function __construct(array $translates)
 	{
 		$this->translates = $translates;
