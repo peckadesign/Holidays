@@ -10,4 +10,5 @@ interface IYear
 
 	/** @return array|IHoliday[] */
 	public function getHolidays(): array;
+
 }

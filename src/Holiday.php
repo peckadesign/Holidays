@@ -5,20 +5,11 @@ namespace Pd\Holidays;
 class Holiday implements IHoliday
 {
 
-	/**
-	 * @var int
-	 */
-	private $month;
+	private int $month;
 
-	/**
-	 * @var int
-	 */
-	private $day;
+	private int $day;
 
-	/**
-	 * @var string
-	 */
-	private $name;
+	private string $name;
 
 
 	public function __construct(

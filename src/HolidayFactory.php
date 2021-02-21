@@ -8,7 +8,7 @@ class HolidayFactory
 	/**
 	 * @var array<string, string> ['_lang' => 'value']
 	 */
-	private $translates;
+	private array $translates;
 
 
 	/**
@@ -24,4 +24,5 @@ class HolidayFactory
 	{
 		return new Holiday($month, $day, $this->translates[$name] ?? $name);
 	}
+
 }

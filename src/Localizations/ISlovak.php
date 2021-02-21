@@ -6,4 +6,5 @@ interface ISlovak
 {
 
 	public const COUNTRY_CODE_SLOVAK = 'SK';
+
 }
