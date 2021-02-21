@@ -2,14 +2,11 @@
 
 namespace Pd\Holidays;
 
-use Pd;
-
-
 class HolidayFacade implements IHolidayFacade
 {
 
 	/** @var array|ILocalization[] */
-	private $localizations;
+	private array $localizations;
 
 
 	public function getHoliday(string $countryCode, \DateTimeInterface $dateTime): ?IHoliday

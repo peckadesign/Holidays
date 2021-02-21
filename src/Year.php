@@ -6,10 +6,10 @@ class Year implements IYear
 {
 
 	/** @var array<int, array<int, IHoliday>> */
-	private $holidaysStructured = [];
+	private array $holidaysStructured = [];
 
 	/** @var array|IHoliday[] */
-	private $holidays = [];
+	private array $holidays = [];
 
 
 	/**
@@ -39,4 +39,5 @@ class Year implements IYear
 	{
 		return $this->holidays;
 	}
+
 }

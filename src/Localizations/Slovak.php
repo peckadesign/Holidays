@@ -2,31 +2,24 @@
 
 namespace Pd\Holidays\Localizations;
 
-use Pd;
-use Nette;
-
-
-class Slovak implements Pd\Holidays\ILocalization
+class Slovak implements \Pd\Holidays\ILocalization
 {
 
 	/** @var array<int, \Pd\Holidays\Year> */
-	private $years;
+	private array $years;
 
-	/**
-	 * @var Pd\Holidays\HolidayFactory
-	 */
-	private $holidayFactory;
+	private \Pd\Holidays\HolidayFactory $holidayFactory;
 
 
 	public function __construct(
-		Pd\Holidays\HolidayFactory $holidayFactory
+		\Pd\Holidays\HolidayFactory $holidayFactory
 	) {
 
 		$this->holidayFactory = $holidayFactory;
 	}
 
 
-	public function getHolidays(int $year): Pd\Holidays\IYear
+	public function getHolidays(int $year): \Pd\Holidays\IYear
 	{
 		if (isset($this->years[$year])) {
 			return $this->years[$year];
@@ -46,13 +39,13 @@ class Slovak implements Pd\Holidays\ILocalization
 		$holidays[] = $this->holidayFactory->create(12, 25, '_label_holiday_25_12');
 		$holidays[] = $this->holidayFactory->create(12, 26, '_label_holiday_26_12');
 
-		$eastern = Nette\Utils\DateTime::from(strtotime('+ 1 day', easter_date($year)));
+		$eastern = \Nette\Utils\DateTime::from(\strtotime('+ 1 day', \easter_date($year)));
 		$holidays[] = $this->createHoliday($eastern, '_label_holiday_eastern');
 
-		$easternFriday = Nette\Utils\DateTime::from(strtotime('- 2 day', easter_date($year)));
+		$easternFriday = \Nette\Utils\DateTime::from(\strtotime('- 2 day', \easter_date($year)));
 		$holidays[] = $this->createHoliday($easternFriday, '_label_holiday_eastern_friday');
 
-		$this->years[$year] = new Pd\Holidays\Year($holidays);
+		$this->years[$year] = new \Pd\Holidays\Year($holidays);
 
 		return $this->years[$year];
 	}
@@ -62,4 +55,5 @@ class Slovak implements Pd\Holidays\ILocalization
 	{
 		return $this->holidayFactory->create((int) $dateTime->format('n'), (int) $dateTime->format('j'), $name);
 	}
+
 }
