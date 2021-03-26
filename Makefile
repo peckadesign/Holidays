@@ -11,3 +11,4 @@ phpstan:
 
 run-tests:
 	vendor/bin/tester tests/ -s -C
+
