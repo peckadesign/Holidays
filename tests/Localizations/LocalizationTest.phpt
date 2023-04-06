@@ -28,6 +28,8 @@ class LocalizationTest extends Tester\TestCase
 			[new Pd\Holidays\Localizations\Slovak($holidayFactory), 2016, 15],
 			[new Pd\Holidays\Localizations\Slovak($holidayFactory), 2017, 15],
 			[new Pd\Holidays\Localizations\Slovak($holidayFactory), 2018, 15],
+			[new Pd\Holidays\Localizations\Slovak($holidayFactory), 2023, 15],
+			[new Pd\Holidays\Localizations\Slovak($holidayFactory), 2025, 15],
 		];
 
 		return $data;
