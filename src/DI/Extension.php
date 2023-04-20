@@ -21,7 +21,7 @@ final class Extension extends \Nette\DI\CompilerExtension
 	}
 
 
-	private function addLocalization(\Nette\DI\ServiceDefinition $holidayFacade, string $localizationClass, string $countryCode): void
+	private function addLocalization(\Nette\DI\Definitions\ServiceDefinition $holidayFacade, string $localizationClass, string $countryCode): void
 	{
 		$builder = $this->getContainerBuilder();
 		$countryCodePrefix = \Nette\Utils\Strings::lower($countryCode);
