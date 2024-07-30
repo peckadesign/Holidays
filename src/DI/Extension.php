@@ -20,6 +20,7 @@ final class Extension extends \Nette\DI\CompilerExtension
 		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\Czech::class, \Pd\Holidays\Localizations\ICzech::COUNTRY_CODE_CZECH);
 		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\Slovak::class, \Pd\Holidays\Localizations\ISlovak::COUNTRY_CODE_SLOVAK);
 		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\Romania::class, \Pd\Holidays\Localizations\IRomania::COUNTRY_CODE_ROMANIA);
+		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\France::class, \Pd\Holidays\Localizations\IFrance::COUNTRY_CODE_FRANCE);
 	}
 
 
