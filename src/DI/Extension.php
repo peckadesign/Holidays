@@ -21,6 +21,7 @@ final class Extension extends \Nette\DI\CompilerExtension
 		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\Slovak::class, \Pd\Holidays\Localizations\ISlovak::COUNTRY_CODE_SLOVAK);
 		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\Romania::class, \Pd\Holidays\Localizations\IRomania::COUNTRY_CODE_ROMANIA);
 		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\France::class, \Pd\Holidays\Localizations\IFrance::COUNTRY_CODE_FRANCE);
+		$this->addLocalization($holidayFacade, \Pd\Holidays\Localizations\Poland::class, \Pd\Holidays\Localizations\IPoland::COUNTRY_CODE_POLAND);
 	}
 
 
