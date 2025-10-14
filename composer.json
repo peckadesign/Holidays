@@ -12,7 +12,7 @@
         "php": "^7.4|^8.0",
         "ext-mbstring": "*",
         "nette/utils": "^3.0",
-        "nette/di": "^3.0",
+        "nette/di": "^3.0|^3.1.3",
         "nette/neon": "^3.0"
     },
     "require-dev": {
