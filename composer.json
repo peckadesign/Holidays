@@ -30,11 +30,6 @@
             "PdTests\\Holidays\\": "tests"
         }
     },
-    "extra": {
-        "branch-alias": {
-            "dev-nette-3.2": "2.1-dev"
-        }
-    },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
